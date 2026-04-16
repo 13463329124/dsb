@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { mergeAndSortPosts } from "~/utils/blog-posts";
 import { fetchGithubIssuePosts } from "~/utils/github-issues";
 
