@@ -20,8 +20,9 @@ const { data: posts } = await useAsyncData("posts", async () => {
 <template>
   <section class="space-y-6">
     <header>
-      <h1 class="text-3xl font-bold text-white">Blog Posts</h1>
-      <p class="mt-2 text-zinc-300">Posts are loaded from `content/blog/*.md` and GitHub Issues.</p>
+      <h1 class="text-3xl font-bold text-white">个人博客</h1>
+      <p class="mt-2 text-zinc-300">本地 Markdown 文件：GitHub Issues：从配置的仓库里读取Issues作为文章
+</p>
     </header>
 
     <div class="grid gap-4">
