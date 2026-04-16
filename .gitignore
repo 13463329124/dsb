@@ -1,0 +1,9 @@
+﻿node_modules
+.nuxt
+.output
+dist
+.npm-cache
+.cache
+.localapp
+.env
+.env.local
