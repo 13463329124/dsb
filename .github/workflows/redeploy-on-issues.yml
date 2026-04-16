@@ -1,0 +1,12 @@
+name: Redeploy on Issue Changes
+
+on:
+  issues:
+    types: [opened, edited, reopened, closed, labeled, unlabeled]
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Deploy Hook
+        run: curl -sS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
